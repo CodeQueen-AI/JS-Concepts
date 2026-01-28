@@ -17,4 +17,5 @@ let student = {
     name: "Ali",
     marks: { math: 90, english: 85 }
 };
-console.log(student.marks.math); // 90
+console.log(student.marks.math); 
+
