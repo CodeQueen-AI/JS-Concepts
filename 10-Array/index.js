@@ -1,50 +1,82 @@
-console.log("======================================");
-console.log("🟢 Topic: JavaScript Arrays - Methods & Looping");
-console.log("======================================\n");
-
-// Numbers Array
+// 1️⃣ Simple Array
 let numbers = [1, 2, 3, 4, 5];
-console.log("Original Numbers:", numbers);
+console.log("Numbers:", numbers);
 
-// Array Methods on Numbers
-numbers.push(6);             // Add at end
-numbers.shift();             // Remove first element
-console.log("Updated Numbers:", numbers);
+let fruits = ["Apple", "Banana", "Mango"];
+console.log("Fruits:", fruits);
 
-// Looping with forEach
-console.log("Numbers using forEach():");
-numbers.forEach((num) => console.log(num));
+console.log("\n---------------------------\n");
 
-// map() - create new array
-let squared = numbers.map((num) => num * num);
+// 2️⃣ Array Methods
+
+// Add at end
+numbers.push(6);
+console.log("After push(6):", numbers);
+
+// Remove from end
+numbers.pop();
+console.log("After pop():", numbers);
+
+// Add at start
+numbers.unshift(0);
+console.log("After unshift(0):", numbers);
+
+// Remove from start
+numbers.shift();
+console.log("After shift():", numbers);
+
+// Create new array (map)
+let squared = numbers.map(num => num * num);
 console.log("Squared Numbers:", squared);
 
-// filter() - even numbers
-let evenNumbers = numbers.filter((num) => num % 2 === 0);
+// Filter values
+let evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log("Even Numbers:", evenNumbers);
 
-// reduce() - sum of numbers
+// Reduce to single value
 let sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log("Sum of Numbers:", sum);
 
-console.log("\n--------------------------------------\n");
+console.log("\n---------------------------\n");
 
-// Fruits Array
-let fruits = ["Apple", "Banana", "Mango"];
-console.log("Original Fruits:", fruits);
+// 3️⃣ Looping Arrays
 
-// Update Fruits
-fruits.unshift("Grapes"); // Add at start
-console.log("Updated Fruits:", fruits);
+// forEach loop
+numbers.forEach(num => console.log("Number:", num));
 
-// Looping through fruits
-console.log("Looping through Fruits:");
+// for...of loop
 for (let fruit of fruits) {
-    console.log(fruit);
+    console.log("Fruit:", fruit);
 }
 
 // Array Destructuring
-let [first, second, third] = fruits;
-console.log("Destructured Fruits:", first, second, third);
+let [firstFruit, secondFruit, thirdFruit] = fruits;
+console.log("Destructured Fruits:", firstFruit, secondFruit, thirdFruit);
 
-console.log("✅ End of Array Examples");
+console.log("\n---------------------------\n");
+
+// 4️⃣ Other Array Topics
+
+// slice - get part of array
+let part = numbers.slice(1, 3); // from index 1 to 2
+console.log("Slice of Numbers:", part);
+
+// splice - remove/add elements
+let newFruits = ["Apple", "Banana", "Mango", "Orange"];
+newFruits.splice(1, 1, "Grapes"); // remove 1 element at index 1 and add "Grapes"
+console.log("Splice Fruits:", newFruits);
+
+// indexOf - find index
+console.log("Index of Mango:", newFruits.indexOf("Mango"));
+
+// includes - check existence
+console.log("Does array include Apple?", newFruits.includes("Apple"));
+
+// join - convert to string
+console.log("Join Fruits:", newFruits.join(", "));
+
+// concat - merge arrays
+let combined = numbers.concat(newFruits);
+console.log("Combined Array:", combined);
+
+console.log("\nEnd of Array Examples");
