@@ -14,3 +14,13 @@ function showMessage() {
 }
 showMessage();
 // console.log(message); error (function ke bahar access nahi)
+
+// Block Scope
+if (true) {
+  let x = 10;
+  const y = 20;
+  console.log(x);
+  console.log(y);
+}
+// console.log(x); error
+// console.log(y); error
