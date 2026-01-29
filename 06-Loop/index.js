@@ -10,7 +10,7 @@ while (j <= 5) {
     j++;
 }
 
-// Do...While loop
+// Do While loop
 let k = 1;
 do {
     console.log("Do...While loop:", k);
@@ -21,10 +21,4 @@ do {
 let fruits = ["Apple", "Banana", "Mango"];
 for (let fruit of fruits) {
     console.log("For...of loop:", fruit);
-}
-
-// For...in loop (for objects)
-let person = {name: "Sumbal", age: 20, city: "Karachi"};
-for (let key in person) {
-    console.log("For...in loop:", key, "->", person[key]);
 }

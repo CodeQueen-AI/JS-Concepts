@@ -10,5 +10,5 @@ console.log(age);
 
 // const (block-scoped, cannot change)
 const country = "Pakistan";
-console.log(country); // Output: Pakistan
+console.log(country); 
 // country = "India"; // Error: Assignment to constant variable
