@@ -1,19 +1,11 @@
-console.log("======================================");
-console.log("🟢 Topic: this Keyword in JavaScript");
-console.log("======================================\n");
+// Global Context
+console.log("Global Context:", this); 
 
-// 1️⃣ Global Context
-console.log("🔹 1️⃣ Global Context:");
-console.log(this); // global object (window in browser)
-console.log("--------------------------\n");
-
-// 2️⃣ Function Context
-console.log("🔹 2️⃣ Function Context:");
+// Function Context
 function show() {
-  console.log(this); // normal function → global object
+  console.log("Function Context:", this); 
 }
 show();
-console.log("--------------------------\n");
 
 // 3️⃣ Object Context
 console.log("🔹 3️⃣ Object Context:");
