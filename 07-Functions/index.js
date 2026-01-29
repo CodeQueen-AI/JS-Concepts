@@ -21,3 +21,10 @@ function add(a, b) {
   console.log(a + b);
 }
 add(10, 5);
+
+// Return Statements
+function add(a, b) {
+  return a + b;
+}
+let result = add(4, 6);
+console.log(result);
