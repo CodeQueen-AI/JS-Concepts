@@ -10,3 +10,9 @@ const greet = function () {
 };
 greet();
 
+// Arrow Function
+const greet = () => {
+  console.log("Hello World");
+};
+greet();
+
