@@ -9,6 +9,11 @@ console.log("Division:", a / b);
 console.log("Modulus:", a % b);      
 console.log("Exponent:", a ** b);    
 
+// Assignment Operators
+let c = 5;
+c += 2;
+console.log("c after +=2:", c);
+
 // Comparison Operators
 console.log("Equal:", a == b);    
 console.log("Strict Equal:", a === b);
@@ -21,8 +26,3 @@ let y = false;
 console.log("AND:", x && y); 
 console.log("OR:", x || y); 
 console.log("NOT:", !x);  
-
-// Assignment Operators
-let c = 5;
-c += 2;
-console.log("c after +=2:", c);
