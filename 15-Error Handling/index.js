@@ -6,3 +6,11 @@ try {
 } finally {
     console.log("Execution completed.");
 }
+
+function riskyOperation() {
+    let randomNum = Math.floor(Math.random() * 2); 
+    if (randomNum === 0) {
+        throw new Error("Random failure occurred!");
+    }
+    return "Success!";
+}
