@@ -5,3 +5,7 @@ async function getData() {
 }
 
 getData();
+
+async function getData(){
+    
+}
